@@ -1,15 +1,13 @@
 # open-wearables
 
-React Native SDK for [OpenWearables](https://github.com/the-momentum/open-wearables-react-native-sdk), built with the [Expo Module API](https://docs.expo.dev/modules/module-api/). It bridges the native `OpenWearablesHealthSDK` to allow React Native apps to collect and sync health data.
+React Native SDK for [OpenWearables](https://github.com/the-momentum/open-wearables), built with the [Expo Module API](https://docs.expo.dev/modules/module-api/). It bridges the native `OpenWearablesHealthSDK` to allow React Native apps to collect and sync health data.
 
 ## Platform support
-
 
 | Platform | Status                                                                  |
 | -------- | ----------------------------------------------------------------------- |
 | iOS      | Implemented (via `OpenWearablesHealthSDK` CocoaPod, requires iOS 15.1+) |
 | Android  | Pending — waiting for the Android native SDK to be available            |
-
 
 ## Installation
 
@@ -156,12 +154,10 @@ subscription.remove();
 authSub.remove();
 ```
 
-
 | Event         | Payload                                   | Description                            |
 | ------------- | ----------------------------------------- | -------------------------------------- |
 | `onLog`       | `{ message: string }`                     | Log messages emitted by the native SDK |
 | `onAuthError` | `{ statusCode: number, message: string }` | Authentication errors                  |
-
 
 ---
 
