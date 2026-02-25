@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "open-wearables": ["../src/index"],
+      "open-wearables/*": ["../src/*"]
+    }
+  }
+}
